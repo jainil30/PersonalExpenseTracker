@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReportFragment">
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_weight="1">-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="Expense"-->
+    <!--            android:textSize="30sp"-->
+    <!--            />-->
+
+    <!--        <ListView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:id="@+id/expense"/>-->
+
+    <!--    </LinearLayout>-->
+
+    <!--    <com.google.android.material.divider.MaterialDivider-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+
+    <!--        />-->
+
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_weight="1">-->
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="Income"-->
+    <!--            android:textSize="30sp"-->
+    <!--            />-->
+
+    <!--        <ListView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:id="@+id/income"/>-->
+
+    <!--    </LinearLayout>-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expenses"
+            android:layout_weight="1"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:id="@+id/exp"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/inc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:text="Income"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/rem"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:text="Remaining"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/clr"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:text="Clear"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container"
+        >
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView"
+            />
+    </FrameLayout>
+</LinearLayout>
